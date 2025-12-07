@@ -1,0 +1,8 @@
+{
+  "name": "Copy of LifeLine AI",
+  "description": "Real-time multimodal emergency diagnosis and triage system using Gemini Live API.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
