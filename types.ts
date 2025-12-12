@@ -1,5 +1,11 @@
 export type SeverityLevel = 'LOW' | 'MODERATE' | 'EMERGENCY' | 'UNKNOWN';
 
+export interface RecommendedHospital {
+  name: string;
+  address: string;
+  travelTime: string;
+}
+
 export interface TriageStatus {
   condition: string; // Probable condition
   riskLevel: SeverityLevel;
@@ -8,6 +14,7 @@ export interface TriageStatus {
   department: string; // e.g., Cardiology, Orthopedics
   contraindications: string; // What NOT to do
   reasoning: string; // Medical reasoning
+  recommendedHospital?: RecommendedHospital; // Nearest facility
   lastUpdated: number;
   source?: 'LIVE_OBSERVATION' | 'DEEP_SCAN'; // To distinguish between video stream vs static upload analysis
 }

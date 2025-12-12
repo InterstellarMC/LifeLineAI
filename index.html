@@ -27,6 +27,14 @@
       .animate-pulse-ring {
         animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
       }
+
+      /* Scanning Line Animation */
+      @keyframes scan {
+        0% { top: 0%; opacity: 0; }
+        10% { opacity: 1; }
+        90% { opacity: 1; }
+        100% { top: 100%; opacity: 0; }
+      }
     </style>
   <script type="importmap">
 {
